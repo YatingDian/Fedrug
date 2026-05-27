@@ -19,8 +19,7 @@ Download Instructions
 
 Gene Lists
 The five ferroptosis core gene sets (G1–G5) are provided in `Genelist_use.Rdata`.
-Load in R:
-```r
+
 load("Genelist_use.Rdata")
 
 
