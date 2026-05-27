@@ -28,22 +28,27 @@ Two R scripts are provided to process the data and calculate Fedrug scores.
 
 Script 1: 1.linc2020_GSEA.R
 Purpose: Process LINCS 2020 data and perform GSEA for each compound.
+
 Input:
 data/level3_beta_trt_cp_n1805898x12328.gctx (Treatment data)
 data/level3_beta_ctl_n188708x12328.gctx (Control data)
 Genelist_use.Rdata (Five core gene sets)
+
 Output:
 GSEA results for each compound across G1–G5 (NES and P values)
 
 Script 2: 2.score.R
 Purpose: Calculate Fedrug scores for compounds using the ridge regression model.
+
 Input:
 GSEA results from Script 1
+
 Output:
 Fedrug scores for each compound
 Fedrug-score formula:
-text
+
 Fedrug score = -0.1718 + 0.3841×G1 + 0.3314×G2 + 0.3418×G3 + 0.3776×G4 + 0.3540×G5
+
 where G1–G5 are NES values from GSEA.
 
 For questions or collaboration: dianyating@outlook.com
